@@ -26,33 +26,33 @@ function Contact() {
 
     /* Uncomment below if you want to enable the emailJS */
 
-    if (name !== '' && email !== '' && message !== '') {
-      var templateParams = {
-        name: name,
-        email: email,
-        message: message,
-      }
+    // if (name !== '' && email !== '' && message !== '') {
+    //   var templateParams = {
+    //     name: name,
+    //     email: email,
+    //     message: message,
+    //   }
 
-      console.log(templateParams)
-      emailjs
-        .send(
-          'service_vrucwmk',
-          'template_c0jr7ze',
-          templateParams,
-          'h7n8FrEPsDt2OIQbB'
-        )
-        .then(
-          () => {
-            alert('Message sent successfully!')
-          },
-          () => {
-            alert('Failed to send message. Please try again later.')
-          }
-        )
-      setName('')
-      setEmail('')
-      setMessage('')
-    }
+    //   console.log(templateParams)
+    //   emailjs
+    //     .send(
+    //       'servicei',
+    //       'templateid',
+    //       templateParams,
+    //       'key'
+    //     )
+    //     .then(
+    //       () => {
+    //         alert('Message sent successfully!')
+    //       },
+    //       () => {
+    //         alert('Failed to send message. Please try again later.')
+    //       }
+    //     )
+    //   setName('')
+    //   setEmail('')
+    //   setMessage('')
+    // }
   }
 
   return (
